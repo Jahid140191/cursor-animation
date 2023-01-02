@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.cursor{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #bb2c00;
+    box-shadow: 0px 0px 8px 2px #ff000054;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: anim 3s linear infinite;
+    transition: 0.03s;
+}
+@keyframes anim{
+    0%{
+        border: 2px solid #92bb00;
+        box-shadow: 0px 0px 8px 2px #d0ff00b0;
+    }
+    30%{
+        border: 2px solid #2d04c4;
+        box-shadow: 0px 0px 8px 2px #0004ff75;
+    }
+    80%{
+        border: 2px solid #f30669;
+        box-shadow: 0px 0px 8px 2px #ff00aa69;
+    }
+}
+.dot{
+    
+    height: 3px;
+    width: 3px;
+    background: #bb2c00;
+    border-radius: 50%;
+}
